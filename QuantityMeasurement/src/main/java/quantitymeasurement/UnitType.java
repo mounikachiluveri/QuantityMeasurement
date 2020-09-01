@@ -1,7 +1,7 @@
 package quantitymeasurement;
 
 public enum UnitType {
-    Feet(12.0), Inch(1.0);
+    FEET(12.0), INCH(1.0);
     double conversation;
 
     UnitType(double conversation) {
