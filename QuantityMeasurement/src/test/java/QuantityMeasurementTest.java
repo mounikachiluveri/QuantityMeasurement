@@ -1,6 +1,7 @@
 import org.junit.Assert;
 import org.junit.Test;
 import quantitymeasurement.QuantityMeasurement;
+import quantitymeasurement.QuantityMeasurementException;
 import quantitymeasurement.UnitType;
 
 public class QuantityMeasurementTest {
@@ -51,6 +52,14 @@ public class QuantityMeasurementTest {
          double inch1 = quantityMeasurement.returnUnit(UnitType.INCH, 4.2);
         double inch2 = quantityMeasurement.returnUnit(UnitType.INCH, 4.2);
         Assert.assertEquals(inch1, inch2, 0.0);
+    }
+
+    @Test
+    public void givenQuantityMeasurementType_IfNotProper_ShouldReturnFalse() {
+        QuantityMeasurement quantityMeasurement = new QuantityMeasurement();
+        boolean equals = quantityMeasurement.equals(new QuantityMeasurementException("NULL",
+                QuantityMeasurementException.ExceptionType.NULL_VALUE));
+        Assert.assertFalse(equals);
     }
 }
 
