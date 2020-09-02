@@ -56,7 +56,7 @@ public class QuantityMeasurementTest {
     @Test
     public void givenValueCheckForInch_IfEqual_ShouldReturnTrue() {
         QuantityMeasurement quantityMeasurement = new QuantityMeasurement();
-         double inch1 = quantityMeasurement.returnUnit(UnitType.INCH, 4.2);
+        double inch1 = quantityMeasurement.returnUnit(UnitType.INCH, 4.2);
         double inch2 = quantityMeasurement.returnUnit(UnitType.INCH, 4.2);
         Assert.assertEquals(inch1, inch2, 0.0);
     }
@@ -76,8 +76,9 @@ public class QuantityMeasurementTest {
         double inch2 = quantityMeasurement.returnUnit(UnitType.INCH, 0.0);
         Assert.assertEquals(inch1, inch2, 0.0);
     }
+
     @Test
-    public void given0inchand1inch_IfNotEqual_shouldReturnNotEqual() {
+    public void given0InchAnd1Inch_IfNotEqual_shouldReturnNotEqual() {
         QuantityMeasurement quantityMeasurement = new QuantityMeasurement();
         double Feet1 = quantityMeasurement.returnUnit(UnitType.INCH, 0.0);
         double Feet2 = quantityMeasurement.returnUnit(UnitType.INCH, 1.0);
@@ -91,6 +92,16 @@ public class QuantityMeasurementTest {
         double feet2 = quantityMeasurement.returnUnit(UnitType.FEET, 4.2);
         Assert.assertEquals(feet1, feet2, 0.0);
     }
+
+    @Test
+    public void given1FeetAnd12InchesForFeet_IfEqual_ShouldReturnTrue() {
+        QuantityMeasurement quantityMeasurement = new QuantityMeasurement();
+        double feet1 = quantityMeasurement.returnUnit(UnitType.FEET, 1.0);
+        double feet2 = quantityMeasurement.returnUnit(UnitType.INCH, 12.0);
+        Assert.assertEquals(feet1, feet2, 0.0);
+    }
+
 }
+
 
 
