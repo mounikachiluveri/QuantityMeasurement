@@ -92,51 +92,51 @@ public class QuantityMeasurementTest {
 
     @Test
     public void given1FeetAnd12InchesForFeet_IfEqual_ShouldReturnEqual() {
-        double feet1 = quantityMeasurement.returnUnit(UnitType.FEET, 1.0);
-        double feet2 = quantityMeasurement.returnUnit(UnitType.INCH, 12.0);
-        Assert.assertEquals(feet1, feet2, 0.0);
+        double feet = quantityMeasurement.returnUnit(UnitType.FEET, 1.0);
+        double inch = quantityMeasurement.returnUnit(UnitType.INCH, 12.0);
+        Assert.assertEquals(feet, inch, 0.0);
     }
 
     @Test
     public void given1YardAnd3FeetForYard_IfEqual_ShouldReturnEqual() {
-        double yard1 = quantityMeasurement.returnUnit(UnitType.FEET, 3.0);
-        double yard2 = quantityMeasurement.returnUnit(UnitType.YARD, 1.0);
-        Assert.assertEquals(yard1, yard2, 0.0);
+        double feet = quantityMeasurement.returnUnit(UnitType.FEET, 3.0);
+        double Yard = quantityMeasurement.returnUnit(UnitType.YARD, 1.0);
+        Assert.assertEquals(feet, Yard, 0.0);
     }
 
     @Test
     public void given1YardAnd2FeetForYard_IfNotEqual_ShouldReturnNotEqual() {
-        double yard1 = quantityMeasurement.returnUnit(UnitType.FEET, 2.0);
-        double yard2 = quantityMeasurement.returnUnit(UnitType.YARD, 1.0);
-        Assert.assertNotEquals(yard1, yard2, 0.0);
+        double feet = quantityMeasurement.returnUnit(UnitType.FEET, 2.0);
+        double yard = quantityMeasurement.returnUnit(UnitType.YARD, 1.0);
+        Assert.assertNotEquals(feet, yard, 0.0);
     }
 
     @Test
     public void given1YardAnd36InchForYard_IfEqual_ShouldReturnEqual() {
-        double yard1 = quantityMeasurement.returnUnit(UnitType.YARD, 1.0);
-        double yard2 = quantityMeasurement.returnUnit(UnitType.INCH, 36.0);
-        Assert.assertEquals(yard1, yard2, 0.0);
+        double yard = quantityMeasurement.returnUnit(UnitType.YARD, 1.0);
+        double inch = quantityMeasurement.returnUnit(UnitType.INCH, 36.0);
+        Assert.assertEquals(yard, inch, 0.0);
     }
 
     @Test
     public void given36InchAnd1yard_IfEqual_ShouldReturnEqual() {
-        double yard1 = quantityMeasurement.returnUnit(UnitType.INCH, 36.0);
-        double yard2 = quantityMeasurement.returnUnit(UnitType.YARD, 1.0);
-        Assert.assertEquals(yard1, yard2, 0.0);
+        double inch = quantityMeasurement.returnUnit(UnitType.INCH, 36.0);
+        double yard = quantityMeasurement.returnUnit(UnitType.YARD, 1.0);
+        Assert.assertEquals(inch, yard, 0.0);
     }
 
     @Test
     public void given3FeetAnd1yard_IfEqual_ShouldReturnEqual() {
-        double yard1 = quantityMeasurement.returnUnit(UnitType.FEET, 3.0);
-        double yard2 = quantityMeasurement.returnUnit(UnitType.YARD, 1.0);
-        Assert.assertEquals(yard1, yard2, 0.0);
+        double feet = quantityMeasurement.returnUnit(UnitType.FEET, 3.0);
+        double yard = quantityMeasurement.returnUnit(UnitType.YARD, 1.0);
+        Assert.assertEquals(feet, yard, 0.0);
     }
-    
+
     @Test
     public void given30InchAnd1yard_IfNotEqual_ShouldReturnNotEqual() {
-        double yard1 = quantityMeasurement.returnUnit(UnitType.INCH, 30.0);
-        double yard2 = quantityMeasurement.returnUnit(UnitType.YARD, 1.0);
-        Assert.assertNotEquals(yard1, yard2, 0.0);
+        double inch = quantityMeasurement.returnUnit(UnitType.INCH, 30.0);
+        double yard = quantityMeasurement.returnUnit(UnitType.YARD, 1.0);
+        Assert.assertNotEquals(inch, yard, 0.0);
     }
 }
 
