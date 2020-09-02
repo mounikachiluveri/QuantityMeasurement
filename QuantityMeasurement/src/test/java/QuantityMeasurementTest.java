@@ -138,6 +138,13 @@ public class QuantityMeasurementTest {
         double yard = quantityMeasurement.returnUnit(UnitType.YARD, 1.0);
         Assert.assertNotEquals(inch, yard, 0.0);
     }
+
+    @Test
+    public void given2InchAnd5Centimeter_IfEqual_ShouldReturnEqual() {
+        double inch = quantityMeasurement.returnUnit(UnitType.INCH, 2.0);
+        double centimeter = quantityMeasurement.returnUnit(UnitType.CENTIMETRE, 5.0);
+        Assert.assertEquals(inch, centimeter, 0.0);
+    }
 }
 
 
