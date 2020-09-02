@@ -71,7 +71,7 @@
       <recent name="QuantityMeasurementException.ExceptionType" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.QuantityMeasurementTest.given1YardAnd2FeetForYard_IfNotEqual_ShouldReturnNotEqual">
+  <component name="RunManager" selected="Gradle.QuantityMeasurementTest.given1YardAnd1FeetForYard_IfNotEqual_ShouldReturnNotEqual">
     <configuration name="QuantityMeasurementTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -97,6 +97,25 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;QuantityMeasurementTest.given1FeetAnd12InchesForFeet_IfEqual_ShouldReturnTrue&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="QuantityMeasurementTest.given1YardAnd1FeetForYard_IfNotEqual_ShouldReturnNotEqual" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;QuantityMeasurementTest.given1YardAnd1FeetForYard_IfNotEqual_ShouldReturnNotEqual&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -148,32 +167,13 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="QuantityMeasurementTest.givenQuantityMeasurementReference_IfFProper_ShouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;QuantityMeasurementTest.givenQuantityMeasurementReference_IfFProper_ShouldReturnTrue&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.QuantityMeasurementTest.given1YardAnd1FeetForYard_IfNotEqual_ShouldReturnNotEqual" />
         <item itemvalue="Gradle.QuantityMeasurementTest.given1YardAnd2FeetForYard_IfNotEqual_ShouldReturnNotEqual" />
         <item itemvalue="Gradle.QuantityMeasurementTest.given1YardAnd3FeetForYard_IfEqual_ShouldReturnEqual" />
         <item itemvalue="Gradle.QuantityMeasurementTest.given1FeetAnd12InchesForFeet_IfEqual_ShouldReturnTrue" />
         <item itemvalue="Gradle.QuantityMeasurementTest" />
-        <item itemvalue="Gradle.QuantityMeasurementTest.givenQuantityMeasurementReference_IfFProper_ShouldReturnTrue" />
       </list>
     </recent_temporary>
   </component>
