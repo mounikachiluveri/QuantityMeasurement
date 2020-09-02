@@ -117,7 +117,15 @@ public class QuantityMeasurementTest {
         double yard2 = quantityMeasurement.returnUnit(UnitType.INCH, 36.0);
         Assert.assertEquals(yard1, yard2, 0.0);
     }
+    
+    @Test
+    public void given36InchAnd1yard_IfEqual_ShouldReturnEqual() {
+        double yard1 = quantityMeasurement.returnUnit(UnitType.INCH, 36.0);
+        double yard2 = quantityMeasurement.returnUnit(UnitType.YARD, 1.0);
+        Assert.assertEquals(yard1, yard2, 0.0);
+    }
 }
+
 
 
 
