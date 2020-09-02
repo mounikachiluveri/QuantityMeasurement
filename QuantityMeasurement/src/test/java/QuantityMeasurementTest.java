@@ -145,6 +145,13 @@ public class QuantityMeasurementTest {
         double centimeter = quantityMeasurement.returnUnit(UnitType.CENTIMETRE, 5.0);
         Assert.assertEquals(inch, centimeter, 0.0);
     }
+
+    @Test
+    public void given1InchAnd5Centimeter_IfNotEqual_ShouldReturnNotEqual() {
+        double inch = quantityMeasurement.returnUnit(UnitType.INCH, 1.0);
+        double centimeter = quantityMeasurement.returnUnit(UnitType.CENTIMETRE, 5.0);
+        Assert.assertNotEquals(inch, centimeter, 0.0);
+    }
 }
 
 
