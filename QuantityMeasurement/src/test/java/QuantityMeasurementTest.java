@@ -112,12 +112,11 @@ public class QuantityMeasurementTest {
     }
 
     @Test
-    public void given1YardAnd1InchForYard_IfNotEqual_ShouldReturnNotEqual() {
-        double yard1 = quantityMeasurement.returnUnit(UnitType.INCH, 1.0);
-        double yard2 = quantityMeasurement.returnUnit(UnitType.YARD, 1.0);
-        Assert.assertNotEquals(yard1, yard2, 0.0);
+    public void given1YardAnd36InchForYard_IfEqual_ShouldReturnEqual() {
+        double yard1 = quantityMeasurement.returnUnit(UnitType.YARD, 1.0);
+        double yard2 = quantityMeasurement.returnUnit(UnitType.INCH, 36.0);
+        Assert.assertEquals(yard1, yard2, 0.0);
     }
-
 }
 
 
