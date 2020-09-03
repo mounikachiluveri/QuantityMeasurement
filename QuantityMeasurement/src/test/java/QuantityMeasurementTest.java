@@ -20,7 +20,7 @@ public class QuantityMeasurementTest {
     }
 
     @Test
-    public void givenNullValue_shouldThrowException() {
+    public void givenNullValueToFeet_shouldThrowException() {
         try {
             Feet feet1 = new Feet(null);
         } catch (NullPointerException e) {
@@ -29,7 +29,7 @@ public class QuantityMeasurementTest {
     }
 
     @Test
-    public void givenValueCheck_IfEqual_shouldReturnEqual() {
+    public void givenValueCheckForFeet_IfEqual_shouldReturnEqual() {
         Feet feet1 = new Feet(2.0);
         Feet feet2 = new Feet(2.0);
         Assert.assertEquals(feet1, feet2);
@@ -47,5 +47,21 @@ public class QuantityMeasurementTest {
         Inch inch1 = new Inch(1.0);
         Inch inch2 = new Inch(2.0);
         Assert.assertNotEquals(inch1, inch2);
+    }
+
+    @Test
+    public void givenNullValueToInch_shouldThrowException() {
+        try {
+            Inch inch1 = new Inch(null);
+        } catch (NullPointerException e) {
+            e.getMessage();
+        }
+    }
+
+    @Test
+    public void givenValueCheckForInch_IfEqual_shouldReturnEqual() {
+        Inch inch1 = new Inch(3.0);
+        Inch inch2 = new Inch(3.0);
+        Assert.assertEquals(inch1, inch2);
     }
 }
