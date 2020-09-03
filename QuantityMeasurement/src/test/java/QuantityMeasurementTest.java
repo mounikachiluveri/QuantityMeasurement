@@ -26,4 +26,11 @@ public class QuantityMeasurementTest {
             e.getMessage();
         }
     }
+
+    @Test
+    public void givenValueCheck_IfEqual_shouldReturnEqual() {
+        Feet feet1 = new Feet(2.0);
+        Feet feet2 = new Feet(2.0);
+        Assert.assertEquals(feet1, feet2);
+    }
 }
