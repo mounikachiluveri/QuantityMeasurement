@@ -16,18 +16,18 @@ public class QuantityMeasurementTest {
     }
 
     @Test
-    public void given0Feetand0Feet_shouldReturnTrue() {
-        double result1 = quantityMeasurement.calculateUnit(UnitType.FEET, 0.0);
-        double result2 = quantityMeasurement.calculateUnit(UnitType.FEET, 0.0);
-        boolean compare = quantityMeasurement.compare(result1,result2);
+    public void given0FeetAnd0Feet_shouldReturnTrue() {
+        double feet1 = quantityMeasurement.calculateUnit(UnitType.FEET, 0.0);
+        double feet2 = quantityMeasurement.calculateUnit(UnitType.FEET, 0.0);
+        boolean compare = quantityMeasurement.compare(feet1, feet2);
         Assert.assertTrue(compare);
     }
 
     @Test
     public void given0FeetAnd1Feet_IfNotEqual_shouldReturnFalse() {
-        double result1 = quantityMeasurement.calculateUnit(UnitType.FEET, 0.0);
-        double result2 = quantityMeasurement.calculateUnit(UnitType.FEET, 1.0);
-        boolean compare = quantityMeasurement.compare(result1,result2);
+        double feet1 = quantityMeasurement.calculateUnit(UnitType.FEET, 0.0);
+        double feet2 = quantityMeasurement.calculateUnit(UnitType.FEET, 1.0);
+        boolean compare = quantityMeasurement.compare(feet1, feet2);
         Assert.assertFalse(compare);
     }
 
@@ -56,9 +56,9 @@ public class QuantityMeasurementTest {
 
     @Test
     public void givenValueCheckForInch_IfEqual_ShouldReturnTrue() {
-        double result1 = quantityMeasurement.calculateUnit(UnitType.INCH, 4.2);
-        double result2 = quantityMeasurement.calculateUnit(UnitType.INCH, 4.2);
-        boolean compare = quantityMeasurement.compare(result1,result2);
+        double inch1 = quantityMeasurement.calculateUnit(UnitType.INCH, 4.2);
+        double inch2 = quantityMeasurement.calculateUnit(UnitType.INCH, 4.2);
+        boolean compare = quantityMeasurement.compare(inch1, inch2);
         Assert.assertTrue(compare);
     }
 
@@ -71,132 +71,141 @@ public class QuantityMeasurementTest {
 
     @Test
     public void given0Inchand0Inch_shouldReturnTrue() {
-        double result1 = quantityMeasurement.calculateUnit(UnitType.INCH, 0.0);
-        double result2 = quantityMeasurement.calculateUnit(UnitType.INCH, 0.0);
-        boolean compare = quantityMeasurement.compare(result1,result2);
+        double inch1 = quantityMeasurement.calculateUnit(UnitType.INCH, 0.0);
+        double inch2 = quantityMeasurement.calculateUnit(UnitType.INCH, 0.0);
+        boolean compare = quantityMeasurement.compare(inch1, inch2);
         Assert.assertTrue(compare);
     }
 
     @Test
     public void given0InchAnd1Inch_IfNotEqual_shouldReturnFalse() {
-        double result1 = quantityMeasurement.calculateUnit(UnitType.INCH, 0.0);
-        double result2 = quantityMeasurement.calculateUnit(UnitType.INCH, 1.0);
-        boolean compare = quantityMeasurement.compare(result1,result2);
+        double inch1 = quantityMeasurement.calculateUnit(UnitType.INCH, 0.0);
+        double inch2 = quantityMeasurement.calculateUnit(UnitType.INCH, 1.0);
+        boolean compare = quantityMeasurement.compare(inch1, inch2);
         Assert.assertFalse(compare);
 
     }
 
     @Test
     public void givenValueCheckForFeet_IfEqual_ShouldReturnTrue() {
-        double result1 = quantityMeasurement.calculateUnit(UnitType.FEET, 4.2);
-        double result2 = quantityMeasurement.calculateUnit(UnitType.FEET, 4.2);
-        boolean compare = quantityMeasurement.compare(result1,result2);
+        double feet1 = quantityMeasurement.calculateUnit(UnitType.FEET, 4.2);
+        double feet2 = quantityMeasurement.calculateUnit(UnitType.FEET, 4.2);
+        boolean compare = quantityMeasurement.compare(feet1, feet2);
         Assert.assertTrue(compare);
 
     }
 
     @Test
     public void given1FeetAnd12InchesForFeet_IfEqual_ShouldReturnTrue() {
-        double result1 = quantityMeasurement.calculateUnit(UnitType.FEET, 1.0);
-        double result2 = quantityMeasurement.calculateUnit(UnitType.INCH, 12.0);
-        boolean compare = quantityMeasurement.compare(result1,result2);
+        double inch1 = quantityMeasurement.calculateUnit(UnitType.FEET, 1.0);
+        double inch2 = quantityMeasurement.calculateUnit(UnitType.INCH, 12.0);
+        boolean compare = quantityMeasurement.compare(inch1, inch2);
         Assert.assertTrue(compare);
     }
 
     @Test
     public void given1YardAnd3FeetForYard_IfEqual_ShouldReturnTrue() {
-        double result1 = quantityMeasurement.calculateUnit(UnitType.FEET, 3.0);
-        double result2 = quantityMeasurement.calculateUnit(UnitType.YARD, 1.0);
-        boolean compare = quantityMeasurement.compare(result1,result2);
+        double feet1 = quantityMeasurement.calculateUnit(UnitType.FEET, 3.0);
+        double feet2 = quantityMeasurement.calculateUnit(UnitType.YARD, 1.0);
+        boolean compare = quantityMeasurement.compare(feet1, feet2);
         Assert.assertTrue(compare);
     }
 
     @Test
     public void given1YardAnd2FeetForYard_IfNotEqual_ShouldReturnFalse() {
-        double result1 = quantityMeasurement.calculateUnit(UnitType.FEET, 2.0);
-        double result2 = quantityMeasurement.calculateUnit(UnitType.YARD, 1.0);
-        boolean compare = quantityMeasurement.compare(result1,result2);
+        double feet1 = quantityMeasurement.calculateUnit(UnitType.FEET, 2.0);
+        double feet2 = quantityMeasurement.calculateUnit(UnitType.YARD, 1.0);
+        boolean compare = quantityMeasurement.compare(feet1, feet2);
         Assert.assertFalse(compare);
     }
 
     @Test
     public void given1YardAnd36InchForYard_IfEqual_ShouldReturnTrue() {
-        double result1 = quantityMeasurement.calculateUnit(UnitType.YARD, 1.0);
-        double result2 = quantityMeasurement.calculateUnit(UnitType.INCH, 36.0);
-        boolean compare = quantityMeasurement.compare(result1,result2);
+        double yard1 = quantityMeasurement.calculateUnit(UnitType.YARD, 1.0);
+        double yard2 = quantityMeasurement.calculateUnit(UnitType.INCH, 36.0);
+        boolean compare = quantityMeasurement.compare(yard1, yard2);
         Assert.assertTrue(compare);
     }
 
     @Test
     public void given36InchAnd1yard_IfEqual_ShouldReturnTrue() {
-        double result1 = quantityMeasurement.calculateUnit(UnitType.INCH, 36.0);
-        double result2 = quantityMeasurement.calculateUnit(UnitType.YARD, 1.0);
-        boolean compare = quantityMeasurement.compare(result1,result2);
+        double yard1 = quantityMeasurement.calculateUnit(UnitType.INCH, 36.0);
+        double yard2 = quantityMeasurement.calculateUnit(UnitType.YARD, 1.0);
+        boolean compare = quantityMeasurement.compare(yard1, yard2);
         Assert.assertTrue(compare);
     }
 
     @Test
     public void given3FeetAnd1yard_IfEqual_ShouldReturnEqual() {
-        double result1 = quantityMeasurement.calculateUnit(UnitType.FEET, 3.0);
-        double result2 = quantityMeasurement.calculateUnit(UnitType.YARD, 1.0);
-        boolean compare = quantityMeasurement.compare(result1,result2);
+        double yard1 = quantityMeasurement.calculateUnit(UnitType.FEET, 3.0);
+        double yard2 = quantityMeasurement.calculateUnit(UnitType.YARD, 1.0);
+        boolean compare = quantityMeasurement.compare(yard1, yard2);
         Assert.assertTrue(compare);
     }
 
     @Test
     public void given30InchAnd1yard_IfNotEqual_ShouldReturnFalse() {
-        double result1 = quantityMeasurement.calculateUnit(UnitType.INCH, 30.0);
-        double result2 = quantityMeasurement.calculateUnit(UnitType.YARD, 1.0);
-        boolean compare = quantityMeasurement.compare(result1,result2);
+        double yard1 = quantityMeasurement.calculateUnit(UnitType.INCH, 30.0);
+        double yard2 = quantityMeasurement.calculateUnit(UnitType.YARD, 1.0);
+        boolean compare = quantityMeasurement.compare(yard1, yard2);
         Assert.assertFalse(compare);
     }
 
     @Test
     public void given2InchAnd5Centimeter_IfEqual_ShouldReturnTrue() {
-        double result1 = quantityMeasurement.calculateUnit(UnitType.INCH, 2.0);
-        double result2 = quantityMeasurement.calculateUnit(UnitType.CENTIMETRE, 5.0);
-        boolean compare = quantityMeasurement.compare(result1,result2);
+        double inch1 = quantityMeasurement.calculateUnit(UnitType.INCH, 2.0);
+        double inch2 = quantityMeasurement.calculateUnit(UnitType.CENTIMETRE, 5.0);
+        boolean compare = quantityMeasurement.compare(inch1, inch2);
         Assert.assertTrue(compare);
     }
 
     @Test
     public void given1InchAnd5Centimeter_IfNotEqual_ShouldReturnFalse() {
-        double result1 = quantityMeasurement.calculateUnit(UnitType.INCH, 1.0);
-        double result2 = quantityMeasurement.calculateUnit(UnitType.CENTIMETRE, 5.0);
-        boolean compare = quantityMeasurement.compare(result1,result2);
+        double inch1 = quantityMeasurement.calculateUnit(UnitType.INCH, 1.0);
+        double inch2 = quantityMeasurement.calculateUnit(UnitType.CENTIMETRE, 5.0);
+        boolean compare = quantityMeasurement.compare(inch1, inch2);
         Assert.assertFalse(compare);
     }
 
     @Test
     public void given8InchAnd20Centimeter_IfEqual_ShouldReturnTrue() {
-        double result1 = quantityMeasurement.calculateUnit(UnitType.CENTIMETRE, 20.0);
-        double result2 = quantityMeasurement.calculateUnit(UnitType.INCH, 8.0);
-        boolean compare = quantityMeasurement.compare(result1,result2);
+        double centimetre1 = quantityMeasurement.calculateUnit(UnitType.CENTIMETRE, 20.0);
+        double centimetre2 = quantityMeasurement.calculateUnit(UnitType.INCH, 8.0);
+        boolean compare = quantityMeasurement.compare(centimetre1, centimetre2);
         Assert.assertTrue(compare);
     }
 
     @Test
     public void given5InchAnd11Centimeter_IfNotEqual_ShouldReturnFalse() {
-        double result1 = quantityMeasurement.calculateUnit(UnitType.CENTIMETRE, 11.0);
-        double result2 = quantityMeasurement.calculateUnit(UnitType.INCH, 5.0);
-        boolean compare = quantityMeasurement.compare(result1,result2);
+        double centimetre1 = quantityMeasurement.calculateUnit(UnitType.CENTIMETRE, 11.0);
+        double centimetre2 = quantityMeasurement.calculateUnit(UnitType.INCH, 5.0);
+        boolean compare = quantityMeasurement.compare(centimetre1, centimetre2);
         Assert.assertFalse(compare);
     }
 
     @Test
     public void given1YardAnd90Centimeter_IfEqual_ShouldReturnTrue() {
-        double result1 = quantityMeasurement.calculateUnit(UnitType.YARD, 1.0);
-        double result2 = quantityMeasurement.calculateUnit(UnitType.CENTIMETRE, 90.0);
-        boolean compare = quantityMeasurement.compare(result1,result2);
+        double yard1 = quantityMeasurement.calculateUnit(UnitType.YARD, 1.0);
+        double centimetre1 = quantityMeasurement.calculateUnit(UnitType.CENTIMETRE, 90.0);
+        boolean compare = quantityMeasurement.compare(yard1, centimetre1);
         Assert.assertTrue(compare);
     }
 
     @Test
     public void given4InchesAnd9Centimeter_IfNotEqual_ShouldReturnFalse() {
-        double result1 = quantityMeasurement.calculateUnit(UnitType.INCH, 4.0);
-        double result2 = quantityMeasurement.calculateUnit(UnitType.CENTIMETRE, 9.0);
-        boolean compare = quantityMeasurement.compare(result1,result2);
+        double inch1 = quantityMeasurement.calculateUnit(UnitType.INCH, 4.0);
+        double centimetre1 = quantityMeasurement.calculateUnit(UnitType.CENTIMETRE, 9.0);
+        boolean compare = quantityMeasurement.compare(inch1, centimetre1);
         Assert.assertFalse(compare);
+    }
+
+    @Test
+    public void given2InchesAnd2Inches_WhenEqualTo4Inches_ShouldReturnTrue() {
+        double inch1 = quantityMeasurement.calculateUnit(UnitType.INCH, 2.0);
+        double inch2 = quantityMeasurement.calculateUnit(UnitType.INCH, 2.0);
+        double inch3 = quantityMeasurement.addition(inch1, inch2);
+        boolean compare = quantityMeasurement.compare(4.0, inch3);
+        Assert.assertTrue(compare);
     }
 }
 

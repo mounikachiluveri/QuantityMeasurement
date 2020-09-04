@@ -11,6 +11,10 @@ public class QuantityMeasurement {
         return value1 == value2;
     }
 
+    public double addition(double firstValue, double secondValue) {
+        return firstValue + secondValue;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -19,4 +23,3 @@ public class QuantityMeasurement {
         return Double.compare(that.value, value) == 0;
     }
 }
-

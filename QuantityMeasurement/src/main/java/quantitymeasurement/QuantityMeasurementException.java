@@ -2,7 +2,7 @@ package quantitymeasurement;
 
 public class QuantityMeasurementException extends Exception {
     public enum ExceptionType{
-        NULL_VALUE
+        NULL_VALUE, NEGATIVE_VALUE;
     }
     public ExceptionType type;
 
