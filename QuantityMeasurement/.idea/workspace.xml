@@ -21,7 +21,25 @@
   <component name="ChangeListManager">
     <list default="true" id="757189c0-1bf6-4419-ade4-3f09cc196656" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/quantitymeasurement/QuantityMeasurement.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/quantitymeasurement/QuantityMeasurement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/quantitymeasurement/UnitType.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/quantitymeasurement/UnitType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/QuantityMeasurementTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/QuantityMeasurementTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/QuantityMeasurementTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/QuantityMeasurementTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-QuantityMeasurementTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-QuantityMeasurementTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/quantitymeasurement/QuantityMeasurement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quantitymeasurement/QuantityMeasurement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/quantitymeasurement/UnitType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quantitymeasurement/UnitType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/QuantityMeasurementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/QuantityMeasurementTest.java" afterDir="false" />
@@ -79,26 +97,7 @@
       <recent name="QuantityMeasurementException.ExceptionType" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.QuantityMeasurementTest.given1FeetAnd1Feet_WhenCompared_shouldReturnEqualLength">
-    <configuration name="QuantityMeasurementTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;QuantityMeasurementTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.QuantityMeasurementTest.givenGallonAndLitresVolume_WhenProper_ShouldEqual">
     <configuration name="QuantityMeasurementTest.given0FeetAnd0Inch_shouldReturnEqualLength" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -175,13 +174,32 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="QuantityMeasurementTest.givenGallonAndLitresVolume_WhenProper_ShouldEqual" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;QuantityMeasurementTest.givenGallonAndLitresVolume_WhenProper_ShouldEqual&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.QuantityMeasurementTest.givenGallonAndLitresVolume_WhenProper_ShouldEqual" />
         <item itemvalue="Gradle.QuantityMeasurementTest.given1FeetAnd1Feet_WhenCompared_shouldReturnEqualLength" />
         <item itemvalue="Gradle.QuantityMeasurementTest.given1FeetAnd1Feet_shouldReturnEqualLength" />
         <item itemvalue="Gradle.QuantityMeasurementTest.given0FeetAnd1Inch_shouldReturnNotEqualLength" />
         <item itemvalue="Gradle.QuantityMeasurementTest.given0FeetAnd0Inch_shouldReturnEqualLength" />
-        <item itemvalue="Gradle.QuantityMeasurementTest" />
       </list>
     </recent_temporary>
   </component>
@@ -230,22 +248,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599062280309" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1599193798499">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1599237570169">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599193798499" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1599193798498">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599237570169" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1599237570167">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1599193798498" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1599193798497">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1599237570167" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1599237570162">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1599193798497" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1599193798498">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1599237570162" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1599237570167">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1599193798498" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1599237570167" />
     <state x="65" y="0" key="new project wizard" timestamp="1599062285613">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
