@@ -317,4 +317,12 @@ public class QuantityMeasurementTest {
         boolean compare = quantityMeasurement.compare(milliLitre1, milliLitre2);
         Assert.assertFalse(compare);
     }
+
+    @Test
+    public void given0KilogramAnd0Kilogram_IfEqual_ShouldReturnTrue() {
+        double kilogram1 = quantityMeasurement.calculateUnit(UnitType.KILOGRAM, 0.0);
+        double kilogram2 = quantityMeasurement.calculateUnit(UnitType.KILOGRAM, 0.0);
+        boolean compare = quantityMeasurement.compare(kilogram1, kilogram2);
+        Assert.assertTrue(compare);
+    }
 }
