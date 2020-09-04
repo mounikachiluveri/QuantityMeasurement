@@ -1,58 +1,57 @@
 import org.junit.Assert;
 import org.junit.Test;
-import quantitymeasurement.Feet;
-import quantitymeasurement.Inch;
+import quantitymeasurement.Length;
 
 public class QuantityMeasurementTest {
 
     @Test
-    public void given0FeetAnd0Feet_shouldReturnEqual() {
-        Feet feet1 = new Feet(0.0);
-        Feet feet2 = new Feet(0.0);
-        Assert.assertEquals(feet1, feet2);
+    public void given0LengthAnd0Length_shouldReturnEqual() {
+        Length Length1 = new Length(Length.Unit.FEET, 0.0);
+        Length Length2 = new Length(Length.Unit.FEET, 0.0);
+        Assert.assertEquals(Length1, Length2);
     }
 
     @Test
-    public void given1FeetAnd2Feet_IfNotEqual_shouldReturnNotEqual() {
-        Feet feet1 = new Feet(1.0);
-        Feet feet2 = new Feet(2.0);
-        Assert.assertNotEquals(feet1, feet2);
+    public void given1LengthAnd2Length_IfNotEqual_shouldReturnNotEqual() {
+        Length Length1 = new Length(Length.Unit.FEET, 1.0);
+        Length Length2 = new Length(Length.Unit.FEET, 2.0);
+        Assert.assertNotEquals(Length1, Length2);
     }
 
     @Test
-    public void givenNullValueToFeet_shouldThrowException() {
+    public void givenNullValueToLength_shouldThrowException() {
         try {
-            Feet feet1 = new Feet(null);
+            Length Length1 = new Length(Length.Unit.FEET, null);
         } catch (NullPointerException e) {
             e.getMessage();
         }
     }
 
     @Test
-    public void givenValueCheckForFeet_IfEqual_shouldReturnEqual() {
-        Feet feet1 = new Feet(2.0);
-        Feet feet2 = new Feet(2.0);
-        Assert.assertEquals(feet1, feet2);
+    public void givenValueCheckForLength_IfEqual_shouldReturnEqual() {
+        Length Length1 = new Length(Length.Unit.FEET, 2.0);
+        Length Length2 = new Length(Length.Unit.FEET, 2.0);
+        Assert.assertEquals(Length1, Length2);
     }
 
     @Test
     public void given0InchAnd0Inch_shouldReturnEqual() {
-        Inch inch1 = new Inch(0.0);
-        Inch inch2 = new Inch(0.0);
+        Length inch1 = new Length(Length.Unit.INCH, 0.0);
+        Length inch2 = new Length(Length.Unit.INCH, 0.0);
         Assert.assertEquals(inch1, inch2);
     }
 
     @Test
     public void given1InchAnd2Inch_IfNotEqual_shouldReturnNotEqual() {
-        Inch inch1 = new Inch(1.0);
-        Inch inch2 = new Inch(2.0);
+        Length inch1 = new Length(Length.Unit.INCH, 1.0);
+        Length inch2 = new Length(Length.Unit.INCH, 2.0);
         Assert.assertNotEquals(inch1, inch2);
     }
 
     @Test
     public void givenNullValueToInch_shouldThrowException() {
         try {
-            Inch inch1 = new Inch(null);
+            Length inch1 = new Length(Length.Unit.INCH, null);
         } catch (NullPointerException e) {
             e.getMessage();
         }
@@ -60,8 +59,24 @@ public class QuantityMeasurementTest {
 
     @Test
     public void givenValueCheckForInch_IfEqual_shouldReturnEqual() {
-        Inch inch1 = new Inch(3.0);
-        Inch inch2 = new Inch(3.0);
+        Length inch1 = new Length(Length.Unit.INCH, 3.0);
+        Length inch2 = new Length(Length.Unit.INCH, 3.0);
         Assert.assertEquals(inch1, inch2);
+    }
+
+    @Test
+    public void given0FeetAnd1Inch_shouldReturnNotEqualLength() {
+        Length feet1 = new Length(Length.Unit.FEET, 1.0);
+        Length inch1 = new Length(Length.Unit.INCH, 1.0);
+        boolean compareCheck = feet1.compare(inch1);
+        Assert.assertFalse(compareCheck);
+    }
+
+    @Test
+    public void given1FeetAnd1Feet_WhenCompared_shouldReturnEqualLength() {
+        Length feet1 = new Length(Length.Unit.FEET, 1.0);
+        Length feet2 = new Length(Length.Unit.FEET, 1.0);
+        boolean compareCheck = feet1.compare(feet2);
+        Assert.assertTrue(compareCheck);
     }
 }
