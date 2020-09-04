@@ -285,5 +285,28 @@ public class QuantityMeasurementTest {
         boolean compare = quantityMeasurement.compare(8.0, litre3);
         Assert.assertFalse(compare);
     }
-}
 
+    @Test
+    public void given0GallonAnd0GallonVolume_IfEqual_ShouldReturnTrue() {
+        double gallon1 = quantityMeasurement.calculateUnit(UnitType.GALLON, 0.0);
+        double gallon2 = quantityMeasurement.calculateUnit(UnitType.GALLON, 0.0);
+        boolean compare = quantityMeasurement.compare(gallon1, gallon2);
+        Assert.assertTrue(compare);
+    }
+
+    @Test
+    public void given0LitreAnd0LitreVolume_IfEqual_ShouldReturnTrue() {
+        double litre1 = quantityMeasurement.calculateUnit(UnitType.LITRE, 0.0);
+        double litre2 = quantityMeasurement.calculateUnit(UnitType.LITRE, 0.0);
+        boolean compare = quantityMeasurement.compare(litre1, litre2);
+        Assert.assertTrue(compare);
+    }
+
+    @Test
+    public void given0MilliLitreAnd0MilliLitreVolume_IfEqual_ShouldReturnTrue() {
+        double litre1 = quantityMeasurement.calculateUnit(UnitType.LITRE, 0.0);
+        double litre2 = quantityMeasurement.calculateUnit(UnitType.LITRE, 0.0);
+        boolean compare = quantityMeasurement.compare(litre1, litre2);
+        Assert.assertTrue(compare);
+    }
+}
