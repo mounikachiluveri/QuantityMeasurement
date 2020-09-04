@@ -236,7 +236,7 @@ public class QuantityMeasurementTest {
     }
 
     @Test
-    public void givenGallonAndLitresVolume_WhenProper_ShouldEqual()  {
+    public void givenGallonAndLitresVolume_WhenProper_ShouldReturnTrue() {
         double gallon = quantityMeasurement.calculateUnit(UnitType.GALLON, 1.0);
         double litre = quantityMeasurement.calculateUnit(UnitType.LITRE, 3.785);
         boolean compare = quantityMeasurement.compare(gallon, litre);
@@ -244,7 +244,7 @@ public class QuantityMeasurementTest {
     }
 
     @Test
-    public void given1GallonAnd3point785LitresVolume_WhenAddedEqualTo7point57_ShouldTrue()  {
+    public void given1GallonAnd3point785LitresVolume_WhenAddedEqualTo7point57_ShouldReturnTrue() {
         double litre1 = quantityMeasurement.calculateUnit(UnitType.GALLON, 1.0);
         double litre2 = quantityMeasurement.calculateUnit(UnitType.LITRE, 3.785);
         double litre3 = quantityMeasurement.addition(litre1, litre2);
@@ -253,12 +253,20 @@ public class QuantityMeasurementTest {
     }
 
     @Test
-    public void given1LitreAnd1000MlVolume_WhenAddedEqualTo2Litre_ShouldTrue()  {
+    public void given1LitreAnd1000MlVolume_WhenAddedEqualTo2Litre_ShouldReturnTrue() {
         double litre1 = quantityMeasurement.calculateUnit(UnitType.LITRE, 1.0);
-        double litre2 = quantityMeasurement.calculateUnit(UnitType.MILLILITRE,1000.0);
+        double litre2 = quantityMeasurement.calculateUnit(UnitType.MILLILITRE, 1000.0);
         double litre3 = quantityMeasurement.addition(litre1, litre2);
         boolean compare = quantityMeasurement.compare(2, litre3);
         Assert.assertTrue(compare);
+    }
+
+    @Test
+    public void given1GallonAnd3LitresVolume_IfNotEqual_ShouldReturnFalse() {
+        double litre1 = quantityMeasurement.calculateUnit(UnitType.GALLON, 1.0);
+        double litre2 = quantityMeasurement.calculateUnit(UnitType.LITRE, 3.0);
+        boolean compare = quantityMeasurement.compare(litre1, litre2);
+        Assert.assertFalse(compare);
     }
 }
 
