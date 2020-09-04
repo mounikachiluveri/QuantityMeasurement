@@ -22,6 +22,9 @@
     <list default="true" id="757189c0-1bf6-4419-ade4-3f09cc196656" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quantitymeasurement/QuantityMeasurement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quantitymeasurement/QuantityMeasurement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quantitymeasurement/UnitType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quantitymeasurement/UnitType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/QuantityMeasurementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/QuantityMeasurementTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -247,9 +250,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1599062285613" />
-    <state x="389" y="121" key="refactoring.ChangeSignatureDialog" timestamp="1599150109520">
+    <state x="389" y="121" key="refactoring.ChangeSignatureDialog" timestamp="1599236684242">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="389" y="121" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1599150109520" />
+    <state x="389" y="121" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1599236684242" />
   </component>
 </project>

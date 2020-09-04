@@ -70,7 +70,7 @@ public class QuantityMeasurementTest {
     }
 
     @Test
-    public void given0Inchand0Inch_shouldReturnTrue() {
+    public void given0InchAnd0Inch_shouldReturnTrue() {
         double inch1 = quantityMeasurement.calculateUnit(UnitType.INCH, 0.0);
         double inch2 = quantityMeasurement.calculateUnit(UnitType.INCH, 0.0);
         boolean compare = quantityMeasurement.compare(inch1, inch2);
@@ -232,6 +232,14 @@ public class QuantityMeasurementTest {
         double inch2 = quantityMeasurement.calculateUnit(UnitType.CENTIMETRE, 2.5);
         double inch3 = quantityMeasurement.addition(inch1, inch2);
         boolean compare = quantityMeasurement.compare(3.0, inch3);
+        Assert.assertTrue(compare);
+    }
+
+    @Test
+    public void givenGallonAndLitresVolume_WhenProper_ShouldEqual()  {
+        double gallon = quantityMeasurement.calculateUnit(UnitType.GALLON, 1.0);
+        double litre = quantityMeasurement.calculateUnit(UnitType.LITRE, 3.785);
+        boolean compare = quantityMeasurement.compare(gallon, litre);
         Assert.assertTrue(compare);
     }
 }

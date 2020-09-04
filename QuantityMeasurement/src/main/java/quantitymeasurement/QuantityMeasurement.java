@@ -3,6 +3,9 @@ package quantitymeasurement;
 public class QuantityMeasurement {
     private double value;
 
+    public QuantityMeasurement() {
+    }
+
     public double calculateUnit(UnitType type, Double unit) {
         return unit * type.unitConversion;
     }
