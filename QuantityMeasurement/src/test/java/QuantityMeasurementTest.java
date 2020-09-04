@@ -251,5 +251,14 @@ public class QuantityMeasurementTest {
         boolean compare = quantityMeasurement.compare(7.57, litre3);
         Assert.assertTrue(compare);
     }
+
+    @Test
+    public void given1LitreAnd1000MlVolume_WhenAddedEqualTo2Litre_ShouldTrue()  {
+        double litre1 = quantityMeasurement.calculateUnit(UnitType.LITRE, 1.0);
+        double litre2 = quantityMeasurement.calculateUnit(UnitType.MILLILITRE,1000.0);
+        double litre3 = quantityMeasurement.addition(litre1, litre2);
+        boolean compare = quantityMeasurement.compare(2, litre3);
+        Assert.assertTrue(compare);
+    }
 }
 
