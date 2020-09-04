@@ -210,10 +210,10 @@ public class QuantityMeasurementTest {
 
     @Test
     public void given1FeetAnd2Inches_WhenEqualTo14Inches_ShouldReturnTrue() {
-        double inch1 = quantityMeasurement.calculateUnit(UnitType.INCH, 2.0);
-        double inch2 = quantityMeasurement.calculateUnit(UnitType.FEET, 1.0);
-        double inch3 = quantityMeasurement.addition(inch1, inch2);
-        boolean compare = quantityMeasurement.compare(14.0, inch3);
+        double feet1 = quantityMeasurement.calculateUnit(UnitType.FEET, 1.0);
+        double feet2 = quantityMeasurement.calculateUnit(UnitType.FEET, 1.0);
+        double inch3 = quantityMeasurement.addition(feet1, feet2);
+        boolean compare = quantityMeasurement.compare(24.0, inch3);
         Assert.assertTrue(compare);
     }
 }
