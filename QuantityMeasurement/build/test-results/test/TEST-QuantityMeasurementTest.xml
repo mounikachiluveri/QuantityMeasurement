@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="QuantityMeasurementTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-09-04T16:38:21" hostname="DESKTOP-1HIDL2M" time="0.005">
+<testsuite name="QuantityMeasurementTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-09-04T17:02:36" hostname="DESKTOP-1HIDL2M" time="0.003">
   <properties/>
-  <testcase name="givenGallonAndLitresVolume_WhenProper_ShouldEqual" classname="QuantityMeasurementTest" time="0.005"/>
+  <testcase name="given1GallonAnd3point78LitresVolume_WhenAddedEqualTo7point57_ShouldTrue" classname="QuantityMeasurementTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

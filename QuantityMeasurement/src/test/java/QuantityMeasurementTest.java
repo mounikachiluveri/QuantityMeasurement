@@ -242,5 +242,14 @@ public class QuantityMeasurementTest {
         boolean compare = quantityMeasurement.compare(gallon, litre);
         Assert.assertTrue(compare);
     }
+
+    @Test
+    public void given1GallonAnd3point785LitresVolume_WhenAddedEqualTo7point57_ShouldTrue()  {
+        double litre1 = quantityMeasurement.calculateUnit(UnitType.GALLON, 1.0);
+        double litre2 = quantityMeasurement.calculateUnit(UnitType.LITRE, 3.785);
+        double litre3 = quantityMeasurement.addition(litre1, litre2);
+        boolean compare = quantityMeasurement.compare(7.57, litre3);
+        Assert.assertTrue(compare);
+    }
 }
 
