@@ -190,5 +190,13 @@ public class QuantityMeasurementTest {
         boolean compare = quantityMeasurement.compare(result1,result2);
         Assert.assertTrue(compare);
     }
+
+    @Test
+    public void given4InchesAnd9Centimeter_IfNotEqual_ShouldReturnFalse() {
+        double result1 = quantityMeasurement.calculateUnit(UnitType.INCH, 4.0);
+        double result2 = quantityMeasurement.calculateUnit(UnitType.CENTIMETRE, 9.0);
+        boolean compare = quantityMeasurement.compare(result1,result2);
+        Assert.assertFalse(compare);
+    }
 }
 
