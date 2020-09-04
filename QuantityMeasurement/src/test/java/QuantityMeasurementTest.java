@@ -184,9 +184,9 @@ public class QuantityMeasurementTest {
     }
 
     @Test
-    public void given2FeetAnd60Centimeter_IfEqual_ShouldReturnEqual() {
-        double result1 = quantityMeasurement.calculateUnit(UnitType.FEET, 2.0);
-        double result2 = quantityMeasurement.calculateUnit(UnitType.CENTIMETRE, 60.0);
+    public void given1YardAnd90Centimeter_IfEqual_ShouldReturnTrue() {
+        double result1 = quantityMeasurement.calculateUnit(UnitType.YARD, 1.0);
+        double result2 = quantityMeasurement.calculateUnit(UnitType.CENTIMETRE, 90.0);
         boolean compare = quantityMeasurement.compare(result1,result2);
         Assert.assertTrue(compare);
     }
