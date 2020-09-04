@@ -304,9 +304,17 @@ public class QuantityMeasurementTest {
 
     @Test
     public void given0MilliLitreAnd0MilliLitreVolume_IfEqual_ShouldReturnTrue() {
-        double litre1 = quantityMeasurement.calculateUnit(UnitType.LITRE, 0.0);
-        double litre2 = quantityMeasurement.calculateUnit(UnitType.LITRE, 0.0);
+        double litre1 = quantityMeasurement.calculateUnit(UnitType.MILLILITRE, 0.0);
+        double litre2 = quantityMeasurement.calculateUnit(UnitType.MILLILITRE, 0.0);
         boolean compare = quantityMeasurement.compare(litre1, litre2);
         Assert.assertTrue(compare);
+    }
+
+    @Test
+    public void given1MilliLitreAnd0MilliLitreVolume_IfNotEqual_ShouldReturnFalse() {
+        double milliLitre1 = quantityMeasurement.calculateUnit(UnitType.MILLILITRE, 1.0);
+        double milliLitre2 = quantityMeasurement.calculateUnit(UnitType.MILLILITRE, 0.0);
+        boolean compare = quantityMeasurement.compare(milliLitre1, milliLitre2);
+        Assert.assertFalse(compare);
     }
 }
