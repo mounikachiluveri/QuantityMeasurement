@@ -10,11 +10,15 @@ public enum UnitType {
     MILLILITRE(1.0 / 1000),
     KILOGRAM(1.0),
     GRAM(1 / 1000.0),
-    TONNE(1 * 1000.0);
+    TONNE(1 * 1000.0),
+    FAHRENHEIT,  CELSIUS;
 
     public double unitConversion;
 
     UnitType(double unitConversion) {
         this.unitConversion = unitConversion;
+    }
+    UnitType() {
+    
     }
 }
