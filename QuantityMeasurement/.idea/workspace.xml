@@ -77,7 +77,7 @@
       <recent name="QuantityMeasurementException.ExceptionType" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.QuantityMeasurementTest.given1KilogramAnd1000Grams_IfEqual_ShouldReturnTrue">
+  <component name="RunManager" selected="Gradle.QuantityMeasurementTest.given1KilogramAnd900Grams_IfNotEqual_ShouldReturnFalse">
     <configuration name="QuantityMeasurementTest.given0GramAnd0Gram_IfEqual_ShouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -116,12 +116,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="QuantityMeasurementTest.given0MilliLitreAnd0MilliLitreVolume_IfEqual_ShouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="QuantityMeasurementTest.given1KilogramAnd1000Grams_IfEqual_ShouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;QuantityMeasurementTest.given0MilliLitreAnd0MilliLitreVolume_IfEqual_ShouldReturnTrue&quot;" />
+        <option name="scriptParameters" value="--tests &quot;QuantityMeasurementTest.given1KilogramAnd1000Grams_IfEqual_ShouldReturnTrue&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -135,12 +135,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="QuantityMeasurementTest.given1KilogramAnd1000Grams_IfEqual_ShouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="QuantityMeasurementTest.given1KilogramAnd900Grams_IfNotEqual_ShouldReturnFalse" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;QuantityMeasurementTest.given1KilogramAnd1000Grams_IfEqual_ShouldReturnTrue&quot;" />
+        <option name="scriptParameters" value="--tests &quot;QuantityMeasurementTest.given1KilogramAnd900Grams_IfNotEqual_ShouldReturnFalse&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -175,11 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.QuantityMeasurementTest.given1KilogramAnd900Grams_IfNotEqual_ShouldReturnFalse" />
         <item itemvalue="Gradle.QuantityMeasurementTest.given1KilogramAnd1000Grams_IfEqual_ShouldReturnTrue" />
         <item itemvalue="Gradle.QuantityMeasurementTest.given0GramAnd0Gram_IfEqual_ShouldReturnTrue" />
         <item itemvalue="Gradle.QuantityMeasurementTest.given0KilogramAnd0Kilogram_IfEqual_ShouldReturnTrue" />
         <item itemvalue="Gradle.QuantityMeasurementTest.given1MilliLitreAnd0MilliLitreVolume_IfNotEqual_ShouldReturnFalse" />
-        <item itemvalue="Gradle.QuantityMeasurementTest.given0MilliLitreAnd0MilliLitreVolume_IfEqual_ShouldReturnTrue" />
       </list>
     </recent_temporary>
   </component>
