@@ -21,10 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="757189c0-1bf6-4419-ade4-3f09cc196656" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/quantitymeasurement/QuantityMeasurement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quantitymeasurement/QuantityMeasurement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/quantitymeasurement/QuantityMeasurementException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quantitymeasurement/QuantityMeasurementException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/quantitymeasurement/UnitType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quantitymeasurement/UnitType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/QuantityMeasurementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/QuantityMeasurementTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
     </list>
@@ -81,13 +77,13 @@
       <recent name="QuantityMeasurementException.ExceptionType" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.QuantityMeasurementTest.given1TonneAnd1000Grams_WhenAddedEqualTo1001Kilograms_ShouldTrue">
-    <configuration name="QuantityMeasurementTest.given0TonneAnd0Tonne_IfEqual_ShouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.QuantityMeasurementTest.given0FahrenheitAnd0Fahrenheit_WhenEqual_ShouldReturnTrue">
+    <configuration name="QuantityMeasurementTest.given0FahrenheitAnd0Fahrenheit_WhenEqual_ShouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;QuantityMeasurementTest.given0TonneAnd0Tonne_IfEqual_ShouldReturnTrue&quot;" />
+        <option name="scriptParameters" value="--tests &quot;QuantityMeasurementTest.given0FahrenheitAnd0Fahrenheit_WhenEqual_ShouldReturnTrue&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -101,12 +97,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="QuantityMeasurementTest.given1KilogramAnd900Grams_IfNotEqual_ShouldReturnFalse" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="QuantityMeasurementTest.given0TonneAnd0Tonne_IfEqual_ShouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;QuantityMeasurementTest.given1KilogramAnd900Grams_IfNotEqual_ShouldReturnFalse&quot;" />
+        <option name="scriptParameters" value="--tests &quot;QuantityMeasurementTest.given0TonneAnd0Tonne_IfEqual_ShouldReturnTrue&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -179,11 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.QuantityMeasurementTest.given0FahrenheitAnd0Fahrenheit_WhenEqual_ShouldReturnTrue" />
         <item itemvalue="Gradle.QuantityMeasurementTest.given1TonneAnd1000Grams_WhenAddedEqualTo1001Kilograms_ShouldTrue" />
         <item itemvalue="Gradle.QuantityMeasurementTest.given1TonneAnd999Kilograms_IfNotEqual_ShouldReturnFalse" />
         <item itemvalue="Gradle.QuantityMeasurementTest.given1TonneAnd1000Kilograms_IfEqual_ShouldReturnTrue" />
         <item itemvalue="Gradle.QuantityMeasurementTest.given0TonneAnd0Tonne_IfEqual_ShouldReturnTrue" />
-        <item itemvalue="Gradle.QuantityMeasurementTest.given1KilogramAnd900Grams_IfNotEqual_ShouldReturnFalse" />
       </list>
     </recent_temporary>
   </component>
@@ -232,22 +228,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599062280309" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1599273070407">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1599276507096">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599273070407" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1599273070406">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599276507096" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1599276507094">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1599273070406" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1599273070406">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1599276507094" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1599276507094">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1599273070406" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1599273070406">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1599276507094" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1599276507095">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1599273070406" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1599276507095" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1599270312953">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
