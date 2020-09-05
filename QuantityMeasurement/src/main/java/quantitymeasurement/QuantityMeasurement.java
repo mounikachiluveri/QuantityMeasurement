@@ -13,9 +13,7 @@ public class QuantityMeasurement {
         }
     }
 
-
     public boolean compare(double value1, double value2) {
-
         return value1 == value2;
     }
 
