@@ -385,7 +385,7 @@ public class QuantityMeasurementTest {
     public void given0FahrenheitAnd0Fahrenheit_WhenEqual_ShouldReturnTrue() {
         double fahrenheit1 = quantityMeasurement.CalculateTemperature(UnitType.FAHRENHEIT, 0.0);
         double fahrenheit2 = quantityMeasurement.CalculateTemperature(UnitType.FAHRENHEIT, 0.0);
-        boolean compare = quantityMeasurement.compare(fahrenheit1, fahrenheit2 );
+        boolean compare = quantityMeasurement.compare(fahrenheit1, fahrenheit2);
         Assert.assertTrue(compare);
     }
 
@@ -393,7 +393,23 @@ public class QuantityMeasurementTest {
     public void given0CelsiusAnd0Celsius_IfEqual_ShouldReturnTrue() {
         double celsius1 = quantityMeasurement.CalculateTemperature(UnitType.CELSIUS, 0.0);
         double celsius2 = quantityMeasurement.CalculateTemperature(UnitType.CELSIUS, 0.0);
-        boolean compare = quantityMeasurement.compare(celsius1, celsius2 );
+        boolean compare = quantityMeasurement.compare(celsius1, celsius2);
+        Assert.assertTrue(compare);
+    }
+
+    @Test
+    public void givenCelsiusAnd0Celsius_IfEqual_ShouldReturnTrue() {
+        double celsius1 = quantityMeasurement.CalculateTemperature(UnitType.CELSIUS, 0.0);
+        double celsius2 = quantityMeasurement.CalculateTemperature(UnitType.CELSIUS, 0.0);
+        boolean compare = quantityMeasurement.compare(celsius1, celsius2);
+        Assert.assertTrue(compare);
+    }
+
+    @Test
+    public void given32FahrenheitAnd0Celsius_IfEqual_ShouldReturnTrue() {
+        double fahrenheit1 = quantityMeasurement.CalculateTemperature(UnitType.FAHRENHEIT, 32.0);
+        double celsius1 = quantityMeasurement.CalculateTemperature(UnitType.CELSIUS, 0.0);
+        boolean compare = quantityMeasurement.compare(fahrenheit1, celsius1);
         Assert.assertTrue(compare);
     }
 }
