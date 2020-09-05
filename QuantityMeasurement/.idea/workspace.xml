@@ -78,7 +78,7 @@
       <recent name="QuantityMeasurementException.ExceptionType" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.QuantityMeasurementTest.given0CelsiusAnd0Celsius_IfEqual_ShouldReturnTrue">
+  <component name="RunManager" selected="Gradle.QuantityMeasurementTest.given32FahrenheitAnd0Celsius_IfEqual_ShouldReturnTrue">
     <configuration name="QuantityMeasurementTest.given0CelsiusAnd0Celsius_IfEqual_ShouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -136,25 +136,6 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="QuantityMeasurementTest.given1TonneAnd1000Kilograms_IfEqual_ShouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;QuantityMeasurementTest.given1TonneAnd1000Kilograms_IfEqual_ShouldReturnTrue&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="QuantityMeasurementTest.given1TonneAnd999Kilograms_IfNotEqual_ShouldReturnFalse" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -174,13 +155,32 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="QuantityMeasurementTest.given32FahrenheitAnd0Celsius_IfEqual_ShouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;QuantityMeasurementTest.given32FahrenheitAnd0Celsius_IfEqual_ShouldReturnTrue&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.QuantityMeasurementTest.given32FahrenheitAnd0Celsius_IfEqual_ShouldReturnTrue" />
         <item itemvalue="Gradle.QuantityMeasurementTest.given0CelsiusAnd0Celsius_IfEqual_ShouldReturnTrue" />
         <item itemvalue="Gradle.QuantityMeasurementTest.given0FahrenheitAnd0Fahrenheit_WhenEqual_ShouldReturnTrue" />
         <item itemvalue="Gradle.QuantityMeasurementTest.given1TonneAnd1000Grams_WhenAddedEqualTo1001Kilograms_ShouldTrue" />
         <item itemvalue="Gradle.QuantityMeasurementTest.given1TonneAnd999Kilograms_IfNotEqual_ShouldReturnFalse" />
-        <item itemvalue="Gradle.QuantityMeasurementTest.given1TonneAnd1000Kilograms_IfEqual_ShouldReturnTrue" />
       </list>
     </recent_temporary>
   </component>

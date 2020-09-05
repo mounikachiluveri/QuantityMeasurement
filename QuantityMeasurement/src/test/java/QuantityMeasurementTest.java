@@ -412,6 +412,14 @@ public class QuantityMeasurementTest {
         boolean compare = quantityMeasurement.compare(fahrenheit1, celsius1);
         Assert.assertTrue(compare);
     }
+
+    @Test
+    public void given212FahrenheitAnd100Celsius_IfEqual_ShouldReturnTrue() {
+        double fahrenheit1 = quantityMeasurement.CalculateTemperature(UnitType.FAHRENHEIT, 212.0);
+        double celsius1 = quantityMeasurement.CalculateTemperature(UnitType.CELSIUS, 100.0);
+        boolean compare = quantityMeasurement.compare(fahrenheit1, celsius1);
+        Assert.assertTrue(compare);
+    }
 }
 
 
