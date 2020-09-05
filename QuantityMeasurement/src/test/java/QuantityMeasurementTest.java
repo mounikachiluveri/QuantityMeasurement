@@ -7,7 +7,6 @@ import quantitymeasurement.QuantityMeasurementException;
 import quantitymeasurement.UnitType;
 
 public class QuantityMeasurementTest {
-
     private QuantityMeasurement quantityMeasurement;
 
     @Before
@@ -43,8 +42,8 @@ public class QuantityMeasurementTest {
 
     @Test
     public void givenQuantityMeasurementReference_IfProper_ShouldReturnTrue() {
-        boolean equals = quantityMeasurement.equals(quantityMeasurement);
-        Assert.assertTrue(equals);
+        boolean referenceCheck = quantityMeasurement.equals(quantityMeasurement);
+        Assert.assertTrue(referenceCheck);
     }
 
     @Test
@@ -325,4 +324,118 @@ public class QuantityMeasurementTest {
         boolean compare = quantityMeasurement.compare(kilogram1, kilogram2);
         Assert.assertTrue(compare);
     }
+
+    @Test
+    public void given0GramAnd0Gram_IfEqual_ShouldReturnTrue() {
+        double gram1 = quantityMeasurement.calculateUnit(UnitType.GRAM, 0.0);
+        double gram2 = quantityMeasurement.calculateUnit(UnitType.GRAM, 0.0);
+        boolean compare = quantityMeasurement.compare(gram1, gram2);
+        Assert.assertTrue(compare);
+    }
+
+    @Test
+    public void given1KilogramAnd1000Grams_IfEqual_ShouldReturnTrue() {
+        double kilogram1 = quantityMeasurement.calculateUnit(UnitType.KILOGRAM, 1.0);
+        double kilogram2 = quantityMeasurement.calculateUnit(UnitType.GRAM, 1000.0);
+        boolean compare = quantityMeasurement.compare(kilogram1, kilogram2);
+        Assert.assertTrue(compare);
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
