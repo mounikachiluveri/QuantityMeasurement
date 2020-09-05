@@ -19,6 +19,5 @@ public enum UnitType {
         this.unitConversion = unitConversion;
     }
     UnitType() {
-    
     }
 }
