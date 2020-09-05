@@ -372,6 +372,15 @@ public class QuantityMeasurementTest {
         boolean compare = quantityMeasurement.compare(tonne1, tonne2);
         Assert.assertFalse(compare);
     }
+    @Test
+    public void given1TonneAnd1000Grams_WhenAddedEqualTo1001Kilograms_ShouldTrue() {
+        double tonne1 = quantityMeasurement.calculateUnit(UnitType.TONNE, 1.0);
+        double gram1 = quantityMeasurement.calculateUnit(UnitType.GRAM, 1000.0);
+        double kilogram1 = quantityMeasurement.addition(tonne1, gram1);
+        boolean compare = quantityMeasurement.compare(1001.0,kilogram1);
+        Assert.assertTrue(compare);
+    }
+
 }
 
 
