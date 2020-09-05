@@ -364,6 +364,14 @@ public class QuantityMeasurementTest {
         boolean compare = quantityMeasurement.compare(tonne1, tonne2);
         Assert.assertTrue(compare);
     }
+
+    @Test
+    public void given1TonneAnd999Kilograms_IfNotEqual_ShouldReturnFalse() {
+        double tonne1 = quantityMeasurement.calculateUnit(UnitType.TONNE, 1.0);
+        double tonne2 = quantityMeasurement.calculateUnit(UnitType.KILOGRAM, 999.0);
+        boolean compare = quantityMeasurement.compare(tonne1, tonne2);
+        Assert.assertFalse(compare);
+    }
 }
 
 
