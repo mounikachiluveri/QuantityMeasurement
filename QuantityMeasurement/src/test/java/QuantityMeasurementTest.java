@@ -340,6 +340,14 @@ public class QuantityMeasurementTest {
         boolean compare = quantityMeasurement.compare(kilogram1, kilogram2);
         Assert.assertTrue(compare);
     }
+
+    @Test
+    public void given1KilogramAnd900Grams_IfNotEqual_ShouldReturnFalse() {
+        double kilogram1 = quantityMeasurement.calculateUnit(UnitType.KILOGRAM, 1.0);
+        double kilogram2 = quantityMeasurement.calculateUnit(UnitType.GRAM, 900.0);
+        boolean compare = quantityMeasurement.compare(kilogram1, kilogram2);
+        Assert.assertFalse(compare);
+    }
 }
 
 
